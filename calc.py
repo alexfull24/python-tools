@@ -7,4 +7,5 @@ def gen():
 
       while 0 < i < fetch:
         return random.randint(1, 100)
+        i -= 1
         
