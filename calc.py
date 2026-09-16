@@ -2,10 +2,11 @@ import random
 
 def gen():
   
-  fetch = input("LOOP COUNT: ")
-  i = int(fetch) - 1 
+  fetch = int(input("Iteration frequency: "))
+  i = int(fetch) + 1 
 
-      while 0 < i < fetch:
-        return random.randint(1, 100)
-        i -= 1
-        
+      while 0 < fetch < i:
+        print(random.randint(1, 100))
+        fetch -= 1
+
+gen()
